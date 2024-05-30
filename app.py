@@ -1,3 +1,4 @@
+import dash as dash
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
@@ -8,8 +9,8 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
-    return "hello world"
-    # return render_template('index.html')
+    # return "hello world"
+    return render_template('index.html')
 
 
 @app.route('/predict', methods=['POST'])
