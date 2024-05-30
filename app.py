@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    reutrn 'Hello World'
+    reutrn "Hello World"
     #return render_template('index.html')
 
 
